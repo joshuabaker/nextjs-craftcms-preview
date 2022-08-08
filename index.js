@@ -63,6 +63,11 @@ function message(text) {
 function loadPreview(previewUrl, text = "Load Preview") {
   return `
     <head>
+      <script>
+        if (window.self !== window.top) {
+          window.location = "${previewUrl}"; // Redirect automatically when framed (e.g. preview in CMS)
+        }
+      </script>
       <title>Preview</title>
       ${style}
     </head>
