@@ -1,4 +1,4 @@
-export const style = `<style>
+const style = `<style>
   @import url("https://rsms.me/inter/inter.css");
 
   * {
@@ -48,7 +48,7 @@ export const style = `<style>
   }
 </style>`;
 
-export function message(text) {
+function message(text) {
   return `
     <head>
       <title>${text}</title>
@@ -60,7 +60,7 @@ export function message(text) {
   `;
 }
 
-export function loadPreview(previewUrl, text = "Load Preview") {
+function loadPreview(previewUrl, text = "Load Preview") {
   return `
     <head>
       <title>Preview</title>
@@ -71,3 +71,5 @@ export function loadPreview(previewUrl, text = "Load Preview") {
     </body>
   `;
 }
+
+module.exports = { style, message, loadPreview };
