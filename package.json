@@ -1,6 +1,6 @@
 {
   "name": "@joshuabaker/nextjs-craftcms-preview",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "git@github.com:joshuabaker/nextjs-craftcms-preview.git",
   "author": "Joshua Baker <160484+joshuabaker@users.noreply.github.com>",
   "scripts": {
