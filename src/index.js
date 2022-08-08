@@ -46,7 +46,7 @@ export const style = `<style>
   .button:hover {
     border-color: currentColor;
   }
-</style>`
+</style>`;
 
 export function message(text) {
   return `
@@ -57,7 +57,7 @@ export function message(text) {
     <body>
       <p>${text}</p>
     </body>
-  `
+  `;
 }
 
 export function loadPreview(previewUrl, text = "Load Preview") {
@@ -69,5 +69,5 @@ export function loadPreview(previewUrl, text = "Load Preview") {
     <body>
       <a href="${previewUrl}" class="button">${text}</a>
     </body>
-  `
+  `;
 }
