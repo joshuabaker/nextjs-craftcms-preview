@@ -35,7 +35,7 @@ const style = `<style>
   }
   
   .button {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1rem;
     color: currentColor;
     text-decoration: none;
     background: white;
