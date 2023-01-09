@@ -42,7 +42,7 @@ export default function handler(req, res) {
 You’re standard preview endpoint with consideration for local development.
 
 ```js
-import { loadPreview, message } from "@joshuabaker/nextjs-craftcms-preview";
+import { message } from "@joshuabaker/nextjs-craftcms-preview";
 
 export default function handler(req, res) {
   const { key, url, token } = req.query;
