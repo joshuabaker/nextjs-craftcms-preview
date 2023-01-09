@@ -71,7 +71,7 @@ export default function handler(req, res) {
 Link to `/api/preview-exit?url=${router.asPath}`.
 
 ```js
-export default function exitPreview(req, res) {
+export default function handler(req, res) {
   res.clearPreviewData();
   res.redirect(req.query.url ?? "/");
 }
