@@ -4,6 +4,14 @@ Provides some simple functions to build a preview experience using Next.js and C
 
 ## Usage
 
+Generate a [random encryption key](https://randomkeygen.com/) for use as an `API_KEY`. This should be shared between Craft and Next to avoid unauthorised preview requests.
+
+Configure Craft preview sections with their respective `url`, the `key` and an `expires` (so we can validate the generated Craft token without lookups).
+
+```
+/api/preview?url={{url}}&key={{parseEnv("$API_KEY")}}&expires={{now.timestamp+craft.app.config.general.previewTokenDuration}}
+```
+
 ### `/pages/api/preview.js`
 
 Loads a preview link if the provided `expires` is in the past, else returns an expiration error. If the preview is within Craft’s preview iframe it will automatically redirect.
