@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+>
+> **This repository is no longer maintained.**
+
 # Next.js preview for Craft CMS
 
 Provides some simple functions to build a preview experience using Next.js and Craft CMS.
